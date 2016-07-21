@@ -1,54 +1,24 @@
 {
-  "author": "Allan Ebdrup",
-  "name": "html2pdf.it",
-  "version": "1.7.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Muscula/html2pdf.it"
-  },
-  "private": false,
-  "engines": {
-    "node": "0.10.x"
-  },
-  "main": "./lib/app.js",
-  "dependencies": {
-    "compression": "^1.1.0",
-    "express": "",
-    "morgan": "^1.3.1",
-    "node-uuid": "",
-    "request": "",
-    "slugify-url": ""
-  },
-  "devDependencies": {
-    "mocha": "",
-    "chai": "",
-    "sinon": "",
-    "sinon-chai": "",
-    "underscore": "",
-    "mocha-jshint": "",
-    "open": ""
-  },
+  "name": "express_pdf",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node ./lib/app.js",
-    "test": "_mocha"
+    "test": "supervisor -i node_modules,views,public,front_app bin/www",
+    "start": "node ./bin/www"
   },
-  "subdomain": "html2pdf",
-  "gitHead": "af60c5959b545ab6c21d19919e1abb503d33c5f6",
-  "readmeFilename": "README.md",
-  "description": "html2pdf.it\r ===========\r Using PhantomJS to generate pdfs, via a webservice. Runs using node.js.",
-  "bugs": {
-    "url": "https://github.com/Muscula/html2pdf.it/issues"
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "node-uuid": "",
+    "request": ""
   },
-  "directories": {
-    "test": "test"
-  },
-  "keywords": [
-    "pdf",
-    "html",
-    "nodejs",
-    "converter",
-    "nonsucking",
-    "html2pdf"
-  ],
-  "license": "MIT"
+  "devDependencies":{
+    "gulp":"",
+    "gulp-livereload":""
+  }
 }

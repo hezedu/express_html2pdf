@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .main
+    h1.dw_bigTitle html2PDF
+    h1.dw_h1 通过url生成
+    input.dw_input#input
+    button.dw_button#createByUrl 确定
+    h1.dw_h1 通过内容生成
+    textarea.dw_textarea#textarea
+    button.dw_button#createByPost 确定
+    p.dw_warn 注意：本项目会在
+      i /public/pdf_tmp
+      |下生成PDF的静态文件，且不会自动清除。
+
+    br
+    hr
+    p PDF的一些具体option:
+      a(href="http://html2pdf.it" target="_blank") http://html2pdf.it
+
+  script(src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js")
+  script(src="/javascripts/pdf_test.js")
+
+
