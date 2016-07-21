@@ -11,5 +11,5 @@ gulp.task('livereload', function() {
 
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch(['./front_app/**/*'], ['livereload']);
+  gulp.watch(['./public/**/*'], ['livereload']);
 });
