@@ -2,14 +2,16 @@ extends layout
 
 block content
   .main
+    p 本作是一个fork。版本库：
+      a(href = "https://github.com/hezedu/express_html2pdf") github
     h1.dw_bigTitle html2PDF
-    h1.dw_h1 通过url生成
+    h1.dw_h1 原作只能通过url生成
     input.dw_input#input
     button.dw_button#createByUrl 确定
-    h1.dw_h1 通过内容生成
+    h1.dw_h1 本作能通过内容生成
     textarea.dw_textarea#textarea
     button.dw_button#createByPost 确定
-    p.dw_warn 注意：本项目会在
+    p.dw_warn 注意：这是一个demo, 会在
       i /public/pdf_tmp
       |下生成PDF的静态文件，且不会自动清除。
 
