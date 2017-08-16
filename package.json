@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "supervisor -i node_modules,views,public,front_app bin/www",
-    "start": "node ./bin/www"
+    "start": "NODE_ENV=production pm2 start ./bin/www --name html2pdf"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
